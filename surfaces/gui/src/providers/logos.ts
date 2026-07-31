@@ -22,6 +22,7 @@ import qwen from "./logos/qwen.svg";
 import minimax from "./logos/minimax.svg";
 import xai from "./logos/xai.svg";
 import meta from "./logos/meta.svg";
+import sambanova from "./logos/sambanova.svg";
 
 export const PROVIDER_LOGOS: Record<string, string> = {
   anthropic,
@@ -29,6 +30,7 @@ export const PROVIDER_LOGOS: Record<string, string> = {
   gemini,
   meta,
   ollama,
+  sambanova,
   bedrock,
   vertex,
   openrouter,
@@ -49,6 +51,7 @@ export const PROVIDER_ORDER = [
   "gemini",
   "meta",
   "ollama",
+  "sambanova",
   "bedrock",
   "vertex",
   "openrouter",
