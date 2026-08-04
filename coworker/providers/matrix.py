@@ -137,6 +137,26 @@ MATRIX: dict[str, ModelEntry] = {
     "fireworks:accounts/fireworks/models/llama4-maverick-instruct-basic": ModelEntry(
         "Llama 4 Maverick · via Fireworks", _AGENTIC, 1_000_000
     ),
+    # -- SambaNova -----------------------------------------------------------
+    # SambaNova API is OpenAI-compatible; uses vendor model namespaces.
+    "sambanova:DeepSeek-V3.1": ModelEntry(
+        "DeepSeek V3.1 · SambaNova", _AGENTIC, 131_072
+    ),
+    "sambanova:DeepSeek-V3.2": ModelEntry(
+        "DeepSeek V3.2 · SambaNova", _AGENTIC, 32_768
+    ),
+    "sambanova:Meta-Llama-3.3-70B-Instruct": ModelEntry(
+        "Llama 3.3 70B · SambaNova", _AGENTIC, 131_072
+    ),
+    "sambanova:MiniMax-M2.7": ModelEntry(
+        "MiniMax M2.7 · SambaNova", _AGENTIC, 196_608
+    ),
+    "sambanova:gemma-4-31B-it": ModelEntry(
+        "Gemma 4 31B · SambaNova", _AGENTIC, 131_072
+    ),
+    "sambanova:gpt-oss-120b": ModelEntry(
+        "GPT OSS 120B · SambaNova", _AGENTIC, 131_072
+    ),
     # OpenRouter slugs are lowercase `<lab>/<model>` (checked against their catalog
     # 2026-07-25); same labs as above, one key for all of them.
     "openrouter:z-ai/glm-5.2": ModelEntry("GLM-5.2 · via OpenRouter", _AGENTIC, 128_000),

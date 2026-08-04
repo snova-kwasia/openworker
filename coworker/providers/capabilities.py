@@ -66,7 +66,8 @@ def capabilities_for(model: str) -> ModelCapabilities:
     # tool calling + streaming across their current lineups; vision left off until probed
     # per-model (several have vision variants, but the text flagships are what we suggest).
     if name.startswith(
-        ("deepseek", "glm", "kimi", "minimax", "qwen", "grok", "mistral", "magistral")
+        ("deepseek", "glm", "kimi", "minimax", "qwen", "grok", "mistral", "magistral",
+         "meta-llama", "qwen", "llama")
     ):
         return ModelCapabilities(
             tools=True, vision=False, parallel_tool_calls=True, streaming=True
