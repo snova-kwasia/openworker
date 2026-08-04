@@ -139,19 +139,23 @@ MATRIX: dict[str, ModelEntry] = {
     ),
     # -- SambaNova -----------------------------------------------------------
     # SambaNova API is OpenAI-compatible; uses vendor model namespaces.
+    "sambanova:DeepSeek-V3.1": ModelEntry(
+        "DeepSeek V3.1 · SambaNova", _AGENTIC, 131_072
+    ),
+    "sambanova:DeepSeek-V3.2": ModelEntry(
+        "DeepSeek V3.2 · SambaNova", _AGENTIC, 32_768
+    ),
     "sambanova:Meta-Llama-3.3-70B-Instruct": ModelEntry(
-        "Llama 3.3 70B · SambaNova", _AGENTIC, 128_000
+        "Llama 3.3 70B · SambaNova", _AGENTIC, 131_072
     ),
-    "sambanova:Qwen/Qwen2.5-Coder-32B-Instruct": ModelEntry(
-        "Qwen 2.5 Coder 32B · SambaNova", _AGENTIC, 32_000
+    "sambanova:MiniMax-M2.7": ModelEntry(
+        "MiniMax M2.7 · SambaNova", _AGENTIC, 196_608
     ),
-    "sambanova:Llama-3.2-11B-Vision-Instruct": ModelEntry(
-        "Llama 3.2 11B Vision · SambaNova",
-        ModelCapabilities(tools=True, vision=True, parallel_tool_calls=True, streaming=True),
-        128_000,
+    "sambanova:gemma-4-31B-it": ModelEntry(
+        "Gemma 4 31B · SambaNova", _AGENTIC, 131_072
     ),
-    "sambanova:deepseek-ai/DeepSeek-V3": ModelEntry(
-        "DeepSeek V3 · SambaNova", _AGENTIC, 128_000
+    "sambanova:gpt-oss-120b": ModelEntry(
+        "GPT OSS 120B · SambaNova", _AGENTIC, 131_072
     ),
     # OpenRouter slugs are lowercase `<lab>/<model>` (checked against their catalog
     # 2026-07-25); same labs as above, one key for all of them.
